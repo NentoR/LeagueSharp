@@ -37,7 +37,7 @@ namespace HelpingLSharpNasus
             if (Player.ChampionName != ChampionName)
                 return;
 
-            Q = new Spell(SpellSlot.Q, 150);
+            Q = new Spell(SpellSlot.Q, Player.AttackRange);
             W = new Spell(SpellSlot.W, 600);
             E = new Spell(SpellSlot.E, 650);
             R = new Spell(SpellSlot.R, 50);
@@ -164,9 +164,8 @@ namespace HelpingLSharpNasus
                 case Orbwalking.OrbwalkingMode.LastHit:
                     LastHit();
                     break;
-
-                    RCheck();
             }
+            RCheck();
         }
 
         private static void LaneClear()
