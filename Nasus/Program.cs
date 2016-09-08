@@ -37,7 +37,7 @@ namespace HelpingLSharpNasus
             if (Player.ChampionName != ChampionName)
                 return;
 
-            Q = new Spell(SpellSlot.Q, Player.AttackRange);
+            Q = new Spell(SpellSlot.Q, Orbwalking.GetRealAutoAttackRange(ObjectManager.Player) + 100);
             W = new Spell(SpellSlot.W, 600);
             E = new Spell(SpellSlot.E, 650);
             R = new Spell(SpellSlot.R, 50);
@@ -170,7 +170,7 @@ namespace HelpingLSharpNasus
 
         private static void LaneClear()
         {
-            var StackQ = MinionManager.GetMinions(Q.Range);
+            var StackQ = MinionManager.GetMinions(Player.Position, Q.Range + 100);
             var MQ = Config.Item("LCQ").GetValue<bool>();
             var ME = Config.Item("LCE").GetValue<bool>();
             var MECast = MinionManager.GetMinions(E.Range + E.Width);
@@ -180,7 +180,7 @@ namespace HelpingLSharpNasus
             {
                 foreach (var minion in StackQ)
                 {
-                    if (minion.Health <= Q.GetDamage(minion))
+                    if (minion.Health <= Q.GetDamage(minion) && Q.IsReady())
                     {
                         Q.Cast();
                         Orbwalker.ForceTarget(minion);
@@ -239,13 +239,13 @@ namespace HelpingLSharpNasus
         private static void LastHit()
         {
             var LastHitQ = Config.Item("LHQ").GetValue<bool>();
-            var minionQ = MinionManager.GetMinions(Q.Range);
-            
+            var minionQ = MinionManager.GetMinions(Player.Position, Q.Range + 100);
+
             if (LastHitQ)
             {
                 foreach (var minion in minionQ)
                 {
-                    if(minion.Health <= Q.GetDamage(minion))
+                    if(minion.Health <= Q.GetDamage(minion) && Q.IsReady())
                     {
                         Q.Cast();
                         Orbwalker.ForceTarget(minion);
