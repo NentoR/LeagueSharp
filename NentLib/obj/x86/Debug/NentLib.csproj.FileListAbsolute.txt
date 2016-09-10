@@ -1,0 +1,15 @@
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\NentLib.pdb
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\LeagueSharp.Common.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\LeagueSharp.Data.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\LeagueSharp.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\SharpDX.Direct3D9.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\SharpDX.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\clipper_library.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\LeagueSharp.Sandbox.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\obj\x86\Debug\NentLib.csprojResolveAssemblyReference.cache
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\obj\x86\Debug\NentLib.pdb
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\NentLib.dll.config
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\NentLib.dll
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\bin\Debug\LeagueSharp.Sandbox.pdb
+C:\Users\Nickki\Documents\Visual Studio 2015\Projects\NentLib\NentLib\obj\x86\Debug\NentLib.dll
